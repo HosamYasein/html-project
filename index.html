@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محل الورد الجميل</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    .card {
+      background: white;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #e91e63;
+    }
+    p {
+      margin: 10px 0;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    a.button:hover {
+      background-color: #c2185b;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🌸 محل الورد الجميل 🌸</h1>
+    <p>نقدّم أجمل الورود الطبيعية والهدايا المميزة لجميع المناسبات.</p>
+    <p><strong>العنوان:</strong> شارع الملكة رانيا، عمّان - الأردن</p>
+    <p><strong>هاتف:</strong> 07X XXX XXXX</p>
+    <a class="button" href="tel:+9627XXXXXXXX">اتصل الآن</a>
+    <a class="button" style="background:#25D366" href="https://wa.me/9627XXXXXXXX">واتساب</a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
+    <p style="font-size: 13px; color:#888;">آخر تحديث: <span id="date"></span></p>
+  </div>
+
+  <script>
+    document.getElementById("date").textContent = new Date().toLocaleDateString('ar-JO');
+  </script>
+</body>
+</html>
