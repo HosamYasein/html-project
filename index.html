@@ -3,65 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>محل الورد الجميل</title>
+  <title>ابو الحسن للسياحة والسفر </title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap');
     body {
-      font-family: 'Tahoma', sans-serif;
-      background-color: #f8f8f8;
       margin: 0;
-      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1b1b1b);
+      color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       text-align: center;
-      color: #333;
+      padding: 20px;
     }
     .card {
-      background: white;
-      max-width: 400px;
-      margin: 40px auto;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: #181818;
+      border-radius: 18px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+      padding: 30px;
+      max-width: 500px;
+      width: 100%;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 40px rgba(255,215,0,0.15);
     }
     h1 {
-      color: #e91e63;
+      color: #ffcc00;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
     p {
-      margin: 10px 0;
+      color: #ddd;
+      line-height: 1.6;
+      margin-bottom: 10px;
     }
-    a.button {
+    .button {
       display: inline-block;
-      background-color: #e91e63;
-      color: white;
       padding: 10px 20px;
+      margin: 10px 5px;
       border-radius: 8px;
       text-decoration: none;
-      margin-top: 10px;
+      color: #fff;
+      background: #ffcc00;
+      font-weight: 600;
+      transition: 0.3s ease;
     }
-    a.button:hover {
-      background-color: #c2185b;
+    .button:hover {
+      background: #e6b800;
+      transform: translateY(-2px);
     }
     iframe {
       width: 100%;
       height: 200px;
-      border: 0;
+      border: none;
       border-radius: 10px;
       margin-top: 15px;
+    }
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #999;
+    }
+    .signature {
+      margin-top: 35px;
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffcc00;
+      text-shadow: 0 0 12px #ffcc00;
+      letter-spacing: 1px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 8px #ffcc00; }
+      to { text-shadow: 0 0 20px #fff700; }
     }
   </style>
 </head>
 <body>
+
   <div class="card">
-    <h1>🌸 محل الورد الجميل 🌸</h1>
-    <p>نقدّم أجمل الورود الطبيعية والهدايا المميزة لجميع المناسبات.</p>
-    <p><strong>العنوان:</strong> شارع الملكة رانيا، عمّان - الأردن</p>
-    <p><strong>هاتف:</strong> 07X XXX XXXX</p>
+    <h1>ابو الحسن للسياحة والسفر </h1>
+    <p>رحلات عمرة ببلاش لعيون ابو عدنان </p>
+    <p><strong>📍 العنوان:</strong> شارع الملكة رانيا - عمّان، الأردن</p>
+    <p><strong>📞 الهاتف:</strong> 07X XXX XXXX</p>
+
     <a class="button" href="tel:+9627XXXXXXXX">اتصل الآن</a>
     <a class="button" style="background:#25D366" href="https://wa.me/9627XXXXXXXX">واتساب</a>
+
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen></iframe>
-    <p style="font-size: 13px; color:#888;">آخر تحديث: <span id="date"></span></p>
+
+    <footer>آخر تحديث: <span id="date"></span></footer>
+
+    <div class="signature">حسام عمك</div>
   </div>
 
   <script>
     document.getElementById("date").textContent = new Date().toLocaleDateString('ar-JO');
   </script>
+
 </body>
 </html>
